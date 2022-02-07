@@ -7,18 +7,18 @@
 
 int main(void)
 {
-	int a = 97;
+	char a = 'a';
 
-	while (a <= 122)
+	while (a <= 'z')
 	{
-	if (a != 113 && a != 101)
-
+		if (a == 'q' || a == 'e')
+		{
+			a++;
+			continue;
+		}
 		putchar(a);
 		a++;
 	}
 	putchar ('\n');
 	return (0);
 }
-
-
-
