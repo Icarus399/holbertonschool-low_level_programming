@@ -9,12 +9,14 @@ int main(void)
 {
 
 	int i;
-
-	for (i = 0; i <= 9; i++)
+	
+	for (i = 0; i <= 9)
 	{
-		printf("%d", i);
+		putchar(i + 48);
+		i++;
 	}
 	putchar('\n');
-	return (0);
+	return(0);
 }
+
 
