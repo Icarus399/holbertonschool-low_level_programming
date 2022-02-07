@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+/**
+ * main - function for C
+ * Return: 0
+ */
+
+int main (void)
+{
+
+	int a = 97;
+	int b = 65;
+
+	while(a <= 122)
+	{
+		putchar(a);
+		a++;
+	}
+
+	while (b <= 65)
+	{
+		putchar(b);
+		b++;
+	}
+	putchar ('\n');
+	return (0);
+}
+
+
+

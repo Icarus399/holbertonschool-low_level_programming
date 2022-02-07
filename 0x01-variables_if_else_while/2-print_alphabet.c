@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - program that prints the alphabet in lowercase, followed by a new line.
+ * main - program that prints the alphabet in lowercase,followed by a new line.
  * Return: 0
  */
 
-int main (void)
+int main(void)
 {
 	int a = 97;
 
 	while (a <= 122)
 	{
-		putchar (a);
+		putchar(a);
 		a++;
 	}
 	putchar ('\n');
-		return(0);
+	return (0);
 }
 
