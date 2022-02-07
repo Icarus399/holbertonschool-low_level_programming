@@ -3,7 +3,6 @@
 /**
  * main - function that prints all single digit numbers if base 10
  * Return: 0
- *
  */
 
 int main(void)
@@ -15,6 +14,6 @@ int main(void)
 	{
 		printf("%d", i);
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
