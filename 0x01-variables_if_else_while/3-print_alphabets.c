@@ -5,19 +5,19 @@
  * Return: 0
  */
 
-int main (void)
+int main(void)
 {
 
 	int a = 97;
 	int b = 65;
 
-	while(a <= 122)
+	while (a <= 122)
 	{
 		putchar(a);
 		a++;
 	}
 
-	while (b <= 65)
+	while (b <= 90)
 	{
 		putchar(b);
 		b++;
