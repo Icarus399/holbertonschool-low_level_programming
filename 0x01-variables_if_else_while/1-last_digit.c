@@ -16,12 +16,12 @@ int main(void)
 
 	if (r > 5)
 	{
-		printf("The last digit of %d is %d and is greater that 5\n", n, r);
+		printf("Last digit of %d is %d and is greater that 5\n", n, r);
 	}
 
 	else if (r < 6 && r != 0)
 	{
-	printf("The last digit of %d is %d and is less that 6 and not 0\n", n, r);
+	printf("Last digit of %d is %d and is less that 6 and not 0\n", n, r);
 
 	}
 	else
