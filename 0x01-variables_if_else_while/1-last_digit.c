@@ -1,6 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+/**
+ * main - function add
+ * Return: 0
+ */
 
 int main(void)
 {
@@ -17,8 +21,8 @@ int main(void)
 
 	else if (r < 6 && r != 0)
 	{
-		printf ("The last digit of %d is %d and is less that 6 and not 0\n", n, r);
-	
+	printf("The last digit of %d is %d and is less that 6 and not 0\n", n, r);
+
 	}
 	else
 	{
