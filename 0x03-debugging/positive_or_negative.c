@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * main - this program will assing a random number to the variable.
+ * positive_or_negative - this program will assing a random number to
+ *the variable.
  * Return: 0
  * @n: interger
  */
