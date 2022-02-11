@@ -3,6 +3,7 @@
 /**
  * main - this program will assing a random number to the variable.
  * Return: 0
+ * @n: interger
  */
 
 void positive_or_negative(int n)
