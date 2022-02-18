@@ -3,8 +3,8 @@
 /**
  * _strcat -function that concatenates two strings
  * @dest: destination
- * @src: pointer
- * Return: 0
+ * @src: string
+ * Return: dest
  */
 
 char *_strcat(char *dest, char *src)
@@ -24,6 +24,6 @@ char *_strcat(char *dest, char *src)
 	}
 
 	dest[length] = '\0';
-	return (0);
+	return (dest);
 }
 
