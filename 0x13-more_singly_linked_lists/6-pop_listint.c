@@ -21,7 +21,7 @@ int pop_listint(listint_t **head)
 	}
 	else
 	{
-		return (NULL);
+		return ('\0');
 	}
 	return (idx);
 }
