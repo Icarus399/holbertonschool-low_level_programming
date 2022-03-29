@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int file_from, to, _read, _write;
+	int file_from, file_to, _read, _write;
 	char buffer[1024];
 
 	if (argc != 3)
@@ -19,9 +19,9 @@ int main(int argc, char *argv[])
 	if (file_from == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]),
 			exit(98);
-	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	if (to == -1)
+	if (file_to == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]),
 			exit(99);
 
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		if (_read == -1)
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]),
 				exit(98);
-		_write = write(to, buffer, _read);
+		_write = write(file_to, buffer, _read);
 		if (_write == -1)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]),
 				exit(99);
@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 	if (close(file_from) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", argv[1]),
 			exit(100);
-	if (close(to) == -1)
+	if (close(file_to) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", argv[2]),
 			exit(100);
 	return (0);
