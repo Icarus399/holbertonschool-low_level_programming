@@ -1,8 +1,8 @@
 #include "hash_tables.h"
 /**
  * hash_table_get - function that retrieves a value
- * @ht: parameter
- * @key: parameter
+ * @ht: const
+ * @key: char
  * Return: char*
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
