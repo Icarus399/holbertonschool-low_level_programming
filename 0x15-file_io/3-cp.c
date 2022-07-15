@@ -1,10 +1,10 @@
 
 #include "main.h"
 /**
- * main - copies the content of a file into another
- * @argc: fisrst argument
- * @argv: 2nd argument
- * Return: cont of file
+ * main - program that copies the content of a file into another.
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: contents of files
  */
 int main(int argc, char *argv[])
 {
@@ -34,7 +34,8 @@ int main(int argc, char *argv[])
 		if (_write == -1)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]),
 				exit(99);
-	} while (_read >= 1024 && _read >= 0);
+0-read_textfile.c
+	} while (_read > 0);
 
 	if (close(file_from) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", argv[1]),
